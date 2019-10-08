@@ -1,0 +1,311 @@
+html, body {
+    height:100%;
+    width:100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+                sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+
+@font-face {
+    font-family: LeagueSpartan;
+    font-weight: bold;
+    src: url("blog/fonts/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CopperHewitt;
+    font-weight: bold;
+    src: url("blog/fonts/CooperHewitt-Bold.otf") format("opentype");
+}
+
+.row{
+    margin-right: 0;
+}
+
+.section-heading{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.section-heading hr{
+    width: 50%;
+    height: 0.5em;
+}
+
+/*
+* {
+    outline: 1px solid red;
+}*/
+
+/*NAVBAR*/
+.logo {
+    height: 3.5em;
+    width: 20em;
+}
+.navbar-collapse a:hover {
+    transition: 0.5s;
+    background-color: #FEE856;
+}
+
+.navbar-collapse a.active {
+    transition: 0.5s;
+    background-color: #FEE856;
+}
+.dropdown-toggle:focus, .dropdown-toggle:hover{
+    background-color: #FEE856;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.nav-item{
+    color:#000000;
+    margin: 0 1em 0 1em;
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-collapse a{
+    border-radius: 0.5em;
+}
+.navbar-text{
+  margin-bottom: 0;
+  
+}
+.navbar-light .navbar-text {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'CopperHewitt'; 
+}
+/*NAVBAR ENDS*/
+
+/*VIDEO*/
+.video-div{
+    width:100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity:1.8;
+}
+/*VIDEO*/
+
+.mission-statement .mission-statement-text{
+  font-family: 'LeagueSpartan';
+  font-size: 1.8rem;
+  margin: 1em;
+
+}
+/*MISSION STATEMENT ENDS*/
+
+/*OUR WORK*/
+.section-heading{
+  font-family: 'LeagueSpartan';
+  font-weight: bold;
+}
+.section-heading h2{
+  font-weight: bold;
+  font-size : 3rem;
+}
+.our-work{
+  background-color: #D3D3D3 ;
+  padding : 3em;
+}
+
+.our-work .our-work-images{
+    padding:1em;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 50%;
+}
+.our-work .our-work-images{
+  background-color: #FFFFFF;
+}
+
+.our-work .our-work-containers{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.our-work-text{
+  padding: 2rem;
+}
+
+.our-work .our-work-containers .our-work-text h2{
+  font-family: 'LeagueSpartan';
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* Small devices (tablets, 400px and up) */
+@media (min-width: 330px) {
+    .our-work .our-work-containers .align-right, .our-work .our-work-containers .align-left{
+        text-align: center;
+    }
+    .our-work .our-work-text{
+        padding-top: 1em;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 765px) {
+    .our-work .our-work-containers .align-right{
+        text-align: right;
+    }
+    .our-work .our-work-containers .align-left{
+        text-align: left;
+    }
+    .our-work .our-work-text{
+        padding: 0;
+    }
+
+}
+/*OUR WORK ENDS*/
+
+.our-impact{
+  padding: 3rem;
+}
+.first-column{
+  padding-top : 0rem;
+  padding-bottom: 10rem;
+}
+.second-column{
+  padding-top:5rem;
+  padding-bottom: 5rem;
+}
+.third-column{
+  padding-top: 10rem;
+  padding-bottom: 0rem;
+}
+.big-number{
+  font-size:6rem;
+}
+.smaller-title{
+  font-size:2rem;
+}
+@media (max-width: 765px) {
+      .first-column{
+      padding-top : 1rem;
+      padding-bottom: 1rem;
+    }
+    .second-column{
+      padding-top:1rem;
+      padding-bottom: 1rem;
+    }
+    .third-column{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    
+}
+
+/*GET INVOLVED*/
+.get-involved{
+    padding : 3em 0;
+    background-color: #FEE856;
+}
+.get-involved-text{
+    font-style: italic;
+    margin-right:1em;
+    margin-left: 1em;
+}
+.involved-section{
+  padding: 2rem;
+}
+.involved-section h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+/*GET INVOLVED ENDS*/
+
+/*FOOTER*/
+#footer {
+    background-color: #FEE856;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+#footer .section-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+#footer ul li {
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 0;
+}
+#footer ul li a {
+  color: #727272;
+}
+#footer .float {
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  #footer .float {
+    width: 100%;
+  }
+}
+#footer .copy-right {
+  padding-top: 4em;
+}
+#footer a {
+  color: black;
+}
+#footer a:hover, #footer a:focus {
+  text-decoration: none;
+  color: #539DDB;
+}
+#footer .form-inline .form-group {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+#footer .form-inline .form-group .form-control {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+#footer #fh5co-header-subscribe #email {
+  padding-right: 4em;
+}
+#footer #fh5co-header-subscribe button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background: #539DDB;
+  border: none;
+}
+#footer #fh5co-header-subscribe button i {
+  color: #fff;
+  font-size: 25px;
+}
+.fh5co-social-icon a {
+  padding: 0 5px;
+}
+.fh5co-social-icon a i {
+  color: #000;
+}
+.fh5co-social-icon a:hover, .fh5co-social-icon a:focus {
+  text-decoration: none;
+}
+/*FOOTER ENDS*/

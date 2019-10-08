@@ -1,0 +1,142 @@
+{% load bootstrap4 %}
+{% load static %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{% bootstrap_messages %}
+
+<link rel="stylesheet" href="{% static 'blog/css/navbar.css' %}">
+
+<link rel="stylesheet" href="{% static 'blog/css/icomoon.css' %}">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="{% static 'blog/img/logo.png' %}" class="img-fluid logo"> 
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <p class="navbar-text">HOME</p>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <p class="navbar-text">ABOUT US</p>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <p class="navbar-text">OUR STORY</p>
+                    </a>
+
+                    <a class="dropdown-item" href="#"> 
+                        <p class="navbar-text">OUR TEAM</p>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <p class="navbar-text">OUR WORK</p>
+                </a>
+
+                <div class="dropdown-menu dropleft">
+                    <a class=" dropdown-item dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <p class="navbar-text">PROJECT SAATH</p>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <a class=" dropdown-item" href="#">
+                            <p class="navbar-text">OVERVIEW</p>
+                        </a>
+
+                        <a class=" dropdown-item" href="#">
+                            <p class="navbar-text">BLOG</p>
+                        </a>
+
+                        <a class=" dropdown-item" href="#">
+                            <p class="navbar-text">RESOURCES</p>
+                        </a>
+                    </ul>
+
+                    <a class="dropdown-item" href="#">
+                        <p class="navbar-text">PROJECT CRAFT</p>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <p class="navbar-text">CONTACT US</p>
+                </a>
+            </li>
+
+        </ul>
+    </div> 
+</nav> 
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3 class="section-title">About Words</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+                    <p class="fh5co-social-icon">
+                        <a href="#"><i class="icon-twitter2"></i></a>
+                        <a href="#"><i class="icon-facebook2"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-dribbble2"></i></a>
+                        <a href="#"><i class="icon-youtube"></i></a>
+                    </p>
+                </div>
+                
+                <div class="col-md">
+                    <h3 class="section-title">Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">FAQ / Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md">
+                    <h3 class="section-title">Information</h3>
+                    <ul>
+                        <li><a href="#">Terms &amp; Condition</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Privacy &amp; Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copy-right">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="{% static 'blog/js/main.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'blog/js/index.js' %}"></script>

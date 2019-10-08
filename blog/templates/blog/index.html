@@ -1,0 +1,138 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid h-100 d-flex video-div">
+    <video autoplay muted loop>
+        <source src="{% static 'blog/video/360p_banner.mp4' %}" type="video/mp4"/>
+        Your browser does not support the video tag.
+    </video>    
+</div>
+
+<div class="container-fluid mission-statement">
+    <div class="row">
+        <div class="col text-center">
+            <p class="mission-statement-text">Orenda Trust is a non-profit organisation which aims to empower youth to make a positive change in their own lives and in the lives of others.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid our-work">
+    <div class="row">
+        <div class="col text-center section-heading">
+            <h2>OUR PROJECTS</h2>
+        </div>
+    </div>
+
+    <div class="row our-work-containers">
+        <div class="col-md-4 text-center our-work-imagesdiv">
+            <img class="our-work-images img-fluid" src="{% static 'blog/img/craft_logo.png' %}">
+        </div>
+        <div class="col-md-8 my-auto align-left our-work-text">
+            <h2> PROJECT CRAFT</h2>
+            <p>
+             Project CrAFT (Creating Awareness for Tomorrow) was our first project, and concluded in 2018. Through workshops, campaigns, and training sessions, we worked on improving life skills education and socio-environmental awareness amongst underprivileged children.
+        </p>
+        <button class="btn btn-default">Learn More</button>
+        </div>
+    </div>
+
+        
+    <div class="row our-work-containers">
+        <div class="col-md-4 order-sm-1 order-md-2 text-center text-justify-sm our-work-imagesdiv">
+            <img class="our-work-images img-fluid" src="{% static 'blog/img/saath_logo.png' %}">
+        </div>
+        <div class="col-md-8 order-sm-2 order-md-1 align-right my-auto our-work-text">
+            <h2>PROJECT SAATH</h2>
+            <p>
+             Project Saath centres on building a community of mental health through support and solidarity. We focus on providing not just support for and destigmatisation of mental illness, but also aim to promote overall mental well-being as a whole.
+        </p>
+        <button class="btn btn-default">Learn More</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid our-impact">
+    <div class="row">
+        <div class="col-md-4 first-column">
+            <div class="row">
+                <div class="col text-center big-number">
+                    <b>20+</b>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col text-center">
+                    <p class="smaller-title"><b>Stories Shared</b></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col text-center">
+                    <b> On mental health and well-being issue. Check out Project Saath for more details.</b>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 second-column">
+            <div class="row">
+                <div class="col text-center big-number">
+                    <b>100+</b>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col text-center">
+                    <p class="smaller-title"><b>Workshops and Campaigns</b></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col text-center">
+                    <b> On social, environmental, health based issues and more. Look at our projects for more details.</b>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 third-column">
+            <div class="row">
+                <div class="col text-center big-number">
+                    <b>15k+</b>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col text-center">
+                    <p class="smaller-title"><b>People Impacted</b></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col text-center">
+                    <b> Through our workshops, campaigns, training sessions, curriculum, blog and more. Look at our work for more details.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid get-involved">
+    <div class="row">
+        <div class="col text-center section-heading">
+            <h2>GET INVOLVED</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-center involved-section">
+            <h2>Work With Us</h2>
+            We strongly believe in the power of a collective! If you're interested in collaborating or working with us in any way, send us an email!
+        </div>
+         <div class="col text-center involved-section">
+            <h2>Volunteer/Intern</h2>
+            If you're interested in creating social impact, volunteer/intern with us! Applications will be opening shortly, follow us on Facebook & Instagram or shoot us an email for more updates!
+        </div>
+        <div class="col text-center involved-section">
+            <h2>Contact Us</h2>
+            For any queries, information, comments, or anything else that you might want to discuss, email us at orendatrust@gmail.com. 
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="{% static 'blog/js/jquery.countTo.js' %}"></script>
+{% endblock %}
