@@ -235,6 +235,42 @@ video{
   padding: 3em;
 }
 
+.post-heading{
+  font-family: 'LeagueSpartan';
+}
+.subheading{
+  padding: 1em;
+}
+.post-heading h1{
+  padding-top: 1em;
+  font-size: 3em;
+}
+
+.blog-content{
+  padding-right: 10em;
+  padding-left: 10em;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 990px) {
+  .blog-content{
+  padding-right: 5em;
+  padding-left: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+}
+
+@media (max-width: 768px) {
+  .blog-content{
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+}
+
 /*FOOTER*/
 #footer {
     background-color: #555555;

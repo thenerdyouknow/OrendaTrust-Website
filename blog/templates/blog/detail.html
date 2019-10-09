@@ -1,3 +1,5 @@
+{% extends 'blog/base.html' %}
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -34,17 +36,18 @@
     <![endif]-->
 
 </head>
+{% block content %}
 
 <body>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('{{ blog.image.url }}')">
+    <header class="intro-header" style="padding-top: 100px;">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="row" style="text-align: center;">
+                <div class="col-lg-12">
                     <div class="post-heading">
-                        <h1>{{ blog.title|safe }}</h1>
-                        <h2 class="subheading">{{ blog.summary|safe }}</h2>
+                        <h1 class="title-h1">{{ blog.title|safe }}</h1>
+                        <i><h4 class="subheading">{{ blog.summary|safe }}</h4></i>
                         <span class="meta">Posted on {{ blog.pub_date_pretty }}</span>
                     </div>
                 </div>
@@ -54,9 +57,9 @@
 
     <!-- Post Content -->
     <article>
-        <div class="container">
+        <div class="container blog-content" style="min-height: 100vh;">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-12 col-lg-offset-0">
                     {{ blog.body|safe }}
                 </div>
             </div>
@@ -64,66 +67,8 @@
     </article>
 
     <hr>
-
-    
-<footer>
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <h3 class="section-title">About Words</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-                    <p class="fh5co-social-icon">
-                        <a href="#"><i class="icon-twitter2"></i></a>
-                        <a href="#"><i class="icon-facebook2"></i></a>
-                        <a href="#"><i class="icon-instagram"></i></a>
-                        <a href="#"><i class="icon-dribbble2"></i></a>
-                        <a href="#"><i class="icon-youtube"></i></a>
-                    </p>
-                </div>
-                
-                <div class="col-md">
-                    <h3 class="section-title">Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">FAQ / Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md">
-                    <h3 class="section-title">Information</h3>
-                    <ul>
-                        <li><a href="#">Terms &amp; Condition</a></li>
-                        <li><a href="#">License</a></li>
-                        <li><a href="#">Privacy &amp; Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row copy-right">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                                    </div>
-            </div>
-        </div>
-    </div>
-</footer>
-    <!-- jQuery -->
-    <script src="{% static 'blog/vendor/jquery/jquery.min.js' %}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{% static 'blog/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-
-    <!-- Contact Form JavaScript -->
-    <!-- <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script> -->
-
-    <!-- Theme JavaScript -->
     <script src="{% static 'blog/js/clean-blog.min.js' %}"></script>
 
 </body>
-
+{% endblock %}
 </html>
