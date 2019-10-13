@@ -40,7 +40,7 @@ html, body {
 /*NAVBAR*/
 .logo {
     height: 4em;
-    width: 15em;
+    width: 13em;
 }
 .navbar-collapse a:hover {
     transition: 0.5s;
@@ -81,7 +81,7 @@ html, body {
     color: #000000;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'CopperHewitt'; 
+    font-family: 'LeagueSpartan'; 
 }
 /*NAVBAR ENDS*/
 
@@ -103,7 +103,7 @@ video{
 
 .mission-statement .mission-statement-text{
   font-size: 1.8rem;
-  margin: 1em;
+  margin: 2em;
 
 }
 /*MISSION STATEMENT ENDS*/
@@ -134,13 +134,15 @@ video{
 .our-work .our-work-containers{
     padding-left: 3em;
     padding-right: 3em;
+    padding-top: 2em;
 }
 
-.our-work-text{
-  padding: 2rem;
+.our-worktext{
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 1.4em;
 }
-
-.our-work .our-work-containers .our-work-text h2{
+.our-work .our-work-containers .our-worktext h2{
   font-family: 'LeagueSpartan';
   font-size: 2rem;
   font-weight: bold;
@@ -150,24 +152,43 @@ video{
     .our-work .our-work-containers .align-right, .our-work .our-work-containers .align-left{
         text-align: center;
     }
-    .our-work .our-work-text{
+    .our-work .our-worktext{
+        padding: 2em 0em;
+    }
+}
+
+@media (min-width: 500px) {
+    .our-work .our-work-containers .align-right, .our-work .our-work-containers .align-left{
+        text-align: center;
+    }
+    .our-work .our-worktext{
         padding-top: 1em;
     }
 }
 
 /* Medium devices (desktops, 768px and up) */
-@media (min-width: 765px) {
+@media (min-width: 768px) {
     .our-work .our-work-containers .align-right{
         text-align: right;
     }
     .our-work .our-work-containers .align-left{
         text-align: left;
     }
-    .our-work .our-work-text{
-        padding: 0;
+    .our-work .our-worktext{
+        padding-left: 2em;
+        padding-right: 2em;
     }
-
 }
+
+@media (min-width: 800px) {
+
+    .our-work .our-worktext{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+
 /*OUR WORK ENDS*/
 
 .our-impact{
@@ -176,23 +197,37 @@ video{
 .first-column{
   padding-top : 0rem;
   padding-bottom: 10rem;
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size:1.2em;
 }
 .second-column{
   padding-top:5rem;
   padding-bottom: 5rem;
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size:1.2em;
 }
 .third-column{
   padding-top: 10rem;
   padding-bottom: 0rem;
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size:1.2em;
 }
+
 .big-number{
   font-size:6rem;
+  font-weight: bold;
+  font-family: 'LeagueSpartan';
 }
 .smaller-title{
   font-size:2rem;
+  font-weight: bold;
+  font-family: 'LeagueSpartan';
 }
-@media (max-width: 765px) {
-      .first-column{
+@media (max-width: 768px) {
+    .first-column{
       padding-top : 1rem;
       padding-bottom: 1rem;
     }
@@ -203,6 +238,22 @@ video{
     .third-column{
       padding-top: 1rem;
       padding-bottom: 1rem;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .first-column{
+      padding-left : 1rem;
+      padding-right: 1rem;
+    }
+    .second-column{
+      padding-left : 1rem;
+      padding-right: 1rem;
+    }
+    .third-column{
+      padding-left : 1rem;
+      padding-right: 1rem;
     }
     
 }
@@ -218,11 +269,37 @@ video{
     margin-left: 1em;
 }
 .involved-section{
-  padding: 2rem;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.2em;
 }
+@media (min-width: 768px) {
+
+   .involved-section{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.2em;
+}
+}
+@media (min-width: 1000px) {
+
+.involved-section{
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.2em;
+}
+
+} 
 .involved-section h2{
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'LeagueSpartan';
 }
 .involved-text{
   max-height: 200px;
@@ -234,6 +311,13 @@ video{
 }
 .img-div{
   padding: 3em;
+}
+
+@media (min-width: 400px) {
+
+   .img-div{
+      padding: 0;
+   }
 }
 
 .post-heading{
@@ -280,11 +364,12 @@ video{
 
 .footer-text{
   color: white;
+  padding-left: 0;
 }
 
 .footer-icons{
-  width: 15%;
-  height: 7%;
+  width: 3em;
+  height: 4em;
   padding: 0.5em;
 }
 
