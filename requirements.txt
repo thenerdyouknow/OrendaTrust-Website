@@ -6,4 +6,4 @@ django-js-asset==1.2.2
 Pillow==6.2.0
 pytz==2019.3
 soupsieve==1.9.4
-sqlparse==0.3.0
+sqlparse==0.4.4
